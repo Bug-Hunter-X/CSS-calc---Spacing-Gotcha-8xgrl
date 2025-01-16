@@ -1,0 +1,9 @@
+The solution is to carefully examine your `calc()` expressions and ensure proper spacing.  Generally, no spaces are needed immediately adjacent to the operators (+, -, *, /). However, spaces are needed to separate units (like 'px', 'em', '%').
+
+Here are the corrected versions from `bug.css`:
+
+```css
+/* Correctly spaced calc() expressions */
+width: calc(100% - 20px);
+margin: calc((100vw - 1000px) / 2);
+```
