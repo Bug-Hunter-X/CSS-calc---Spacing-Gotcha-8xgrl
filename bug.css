@@ -1,0 +1,22 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, there's a common pitfall: spaces around the operators are sometimes needed, sometimes not, and the rules aren't always intuitive.  Incorrect spacing can lead to unexpected results or parsing errors.
+
+For example, this will likely fail:
+```css
+width: calc(100% - 20 px);
+```
+
+The correct version is:
+```css
+width: calc(100% - 20px);
+```
+
+Another example:
+
+Incorrect:
+```css
+margin: calc( (100vw - 1000px) /2 );
+```
+Correct:
+```css
+margin: calc((100vw - 1000px) / 2);
+```
